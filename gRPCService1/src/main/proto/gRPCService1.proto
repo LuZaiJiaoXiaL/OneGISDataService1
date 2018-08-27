@@ -1,0 +1,26 @@
+syntax="proto3";
+
+
+
+option java_outer_classname="OneGISdataS1Probuf";
+option java_package="com.OneGISDataService.DataService1";
+option java_multiple_files=true;
+
+package DataService1;
+
+service DataService1 {
+    rpc mongoQuery(Request) returns (stream Response) {}
+}
+
+
+message Request {
+    repeated string ID=1;
+    string startDate=2;
+    string endDate=3;
+    repeated double leftDown=4;
+    repeated double rightUP=5;
+}
+
+message Response {
+    string DataList=1;
+}
