@@ -10,5 +10,10 @@
         <module name="gRPCService1" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="DataManageUtil" target="1.5" />
+      <module name="gRPCService1" target="1.8" />
+      <module name="OneGISDataService1" target="1.5" />
+    </bytecodeTargetLevel>
   </component>
 </project>
